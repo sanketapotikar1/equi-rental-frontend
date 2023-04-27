@@ -42,7 +42,7 @@ function Register() {
     } else {
       console.log("user registration succesfully done");
 
-      const data = await fetch("http://localhost:8000/registration", {
+      const data = await fetch("/registration", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

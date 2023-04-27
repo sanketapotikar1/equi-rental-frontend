@@ -15,7 +15,7 @@ function ForgotPassword() {
   const [message, setMessage] = useState("");
 
   const userValid = async () => {
-    const res = await fetch(`http://localhost:8000//forgotpassword/${id}/${token}`, {
+    const res = await fetch(`/forgotpassword/${id}/${token}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ function ForgotPassword() {
     } else if (password.length < 6) {
       alert("password must be 6 char!");
     } else {
-      const res = await fetch(`http://localhost:8000/${id}/${token}`, {
+      const res = await fetch(`/${id}/${token}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

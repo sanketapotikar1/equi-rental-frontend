@@ -7,7 +7,7 @@ import Login from "./Components/Auth/Login";
 import Register from "./Components/Auth/Register";
 import PasswordReset from "./Components/Auth/PasswordReset";
 import Product from "./Components/Products/Product";
-import AddProduct from "./Components/Products/AddProduct";
+import AddProduct from "./Components/Products/AddProducts";
 import Cart from "./Components/Cart/Cart";
 import CustomerDetails from "./Components/Payment/CustomerDetails";
 import Payment from "./Components/Payment/Payment";
@@ -35,7 +35,7 @@ function App() {
   const ValidUser = async () => {
     let token = localStorage.getItem("usersdatatoken");
 
-    const res = await fetch("http://localhost:8000/validuser", {
+    const res = await fetch("/validuser", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

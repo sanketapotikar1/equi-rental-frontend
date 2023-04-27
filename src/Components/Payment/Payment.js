@@ -20,7 +20,7 @@ function Payment() {
       handler: function (response) {
         console.log(response, "34");
         axios
-          .post("http://localhost:8000/verify", { response: response })
+          .post("/verify", { response: response })
           .then((res) => {
             console.log(res, "37");
             // your orders
@@ -48,7 +48,7 @@ function Payment() {
   const handlePayment = (amount) => {
     const _data = { amount: amount };
     axios
-      .post("http://localhost:8000/orders", _data)
+      .post("/orders", _data)
       .then((res) => {
         console.log(res.data, "29");
         handleOpenRazorpay(res.data.data);

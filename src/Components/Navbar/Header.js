@@ -40,7 +40,7 @@ export default function Header() {
     let token = localStorage.getItem("usersdatatoken");
     console.log(token);
 
-    const res = await fetch("http://localhost:8000/logout", {
+    const res = await fetch("/logout", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

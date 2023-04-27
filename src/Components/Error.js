@@ -15,7 +15,7 @@ const Error = () => {
           }}
         >
           <img
-            src="/404.avif"
+            src="Images/404.avif"
             alt="error"
             style={{ width: "500px", marginBottom: 20 }}
           />

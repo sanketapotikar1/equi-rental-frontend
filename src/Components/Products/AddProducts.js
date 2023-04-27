@@ -4,12 +4,12 @@ import * as yup from "yup";
 import { Box, Button, TextField } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-function AddProduct() {
+function AddProducts() {
   const Navigate = useNavigate();
 
   const addProduct = (newProduct) => {
     console.log(`addproduct triggred`);
-    fetch(`http://localhost:8000/addproducts`, {
+    fetch(`/addproducts`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newProduct),
@@ -124,4 +124,4 @@ function AddProduct() {
   );
 }
 
-export default AddProduct;
+export default AddProducts;

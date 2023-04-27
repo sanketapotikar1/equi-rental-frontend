@@ -37,13 +37,13 @@ export default function CustomerDetails() {
     address1: yup
       .string()
       .required("Please enter your address")
-      .min(3, "please enter your address in more detail")
-      .max(50, "please keep your address short"),
+      .min(3, "please enter your address in more detail"),
+      // .max(50, "please keep your address short"),
     address2: yup
       .string()
       .required("please enter this decription")
-      .min(10, "please enter your address in more detail")
-      .max(150, "please keep your address short"),
+      .min(10, "please enter your address in more detail"),
+      // .max(150, "please keep your address short"),
   });
 
   const { handleSubmit, values, handleChange, handleBlur, errors, touched } =
