@@ -1,0 +1,6 @@
+Version - 2.0.1
+
+New feature 
+-> Add circular loading styling
+-> redirect to Home page when we try to access product page from params 
+-> 
