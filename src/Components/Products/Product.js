@@ -74,7 +74,7 @@ function Product({ cartList, setCartList }) {
   const ValidUser = async () => {
     let token = localStorage.getItem("usersdatatoken");
 
-    const res = await fetch("http://localhost:8000/validuser", {
+    const res = await fetch("https://equipment-rental.onrender.com/validuser", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -101,7 +101,7 @@ function Product({ cartList, setCartList }) {
   // Validate Product API
 
   const getdata = async () => {
-    const res = await fetch("http://localhost:8000/products", {
+    const res = await fetch("https://equipment-rental.onrender.com/products", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -136,7 +136,7 @@ function Product({ cartList, setCartList }) {
 
   // //  let userID = "6436c9de8dc8e0b07e6e44c2"
 
-  //   const res = await fetch(`http://localhost:8000/cartlist/${userID}`, {
+  //   const res = await fetch(`https://equipment-rental.onrender.com/cartlist/${userID}`, {
   //     method: "GET",
   //     headers: {
   //       "Content-Type": "application/json",
