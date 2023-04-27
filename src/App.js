@@ -35,7 +35,7 @@ function App() {
   const ValidUser = async () => {
     let token = localStorage.getItem("usersdatatoken");
 
-    const res = await fetch("/validuser", {
+    const res = await fetch("https://equipment-rental.onrender.com/validuser", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

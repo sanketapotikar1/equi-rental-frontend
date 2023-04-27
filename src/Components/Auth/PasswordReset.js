@@ -17,7 +17,7 @@ function PasswordReset() {
     } else if (!email.includes("@")) {
       alert("includes @ in your email!");
     } else {
-      const res = await fetch("/sendpasswordlink", {
+      const res = await fetch("https://equipment-rental.onrender.com/sendpasswordlink", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

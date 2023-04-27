@@ -42,7 +42,7 @@ function Register() {
     } else {
       console.log("user registration succesfully done");
 
-      const data = await fetch("/registration", {
+      const data = await fetch("https://equipment-rental.onrender.com/registration", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

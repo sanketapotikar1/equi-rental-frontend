@@ -20,7 +20,7 @@ function Payment() {
       handler: function (response) {
         console.log(response, "34");
         axios
-          .post("/verify", { response: response })
+          .post("https://equipment-rental.onrender.com/verify", { response: response })
           .then((res) => {
             console.log(res, "37");
             // your orders
@@ -48,7 +48,7 @@ function Payment() {
   const handlePayment = (amount) => {
     const _data = { amount: amount };
     axios
-      .post("/orders", _data)
+      .post("https://equipment-rental.onrender.com/orders", _data)
       .then((res) => {
         console.log(res.data, "29");
         handleOpenRazorpay(res.data.data);
