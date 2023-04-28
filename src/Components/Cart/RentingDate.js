@@ -7,7 +7,7 @@ import TextField from "@mui/material/TextField";
 import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
 import { Box, Button } from "@mui/material";
 
-export function RentingDate({days, setDays}) {
+export function RentingDate({ days, setDays }) {
   const [startValue, setStartValue] = React.useState(null);
   const [endValue, setEndValue] = React.useState(null);
   // const [days, setDays] = React.useState(1);
@@ -15,9 +15,8 @@ export function RentingDate({days, setDays}) {
   // console.log(startValue, endValue);
 
   function checkCount() {
-
     // console.log(startValue, endValue);
-    let dayCount = (endValue - startValue) / 1000 / 60 / 60 / 24;
+    let dayCount = ((endValue - startValue) / 1000 / 60 / 60 / 24) + 1;
     // console.log(dayCount);
 
     dayCount > 0
