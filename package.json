@@ -2,7 +2,7 @@
   "name": "equi-rental-frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "C",
+  "proxy": "",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",

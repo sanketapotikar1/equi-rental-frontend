@@ -55,24 +55,12 @@ function FAQ() {
 
           <Box style={{ textAlign: "start", marginTop: "50px" }}>
             <hr></hr>
-            <h3>PRODUCT</h3>
-            <h4>The right product when you need it on equipment rental</h4>
-            <p style={{ marginTop: "30px", lineHeight: "1.3" }}>
-              The equipment rental industry has the specific product for the
-              specific job leading to efficiency gains. Equipment is regularly
-              maintained and renting ensures a high quality and reliability of
-              the product when on site.
-            </p>
-            <h4 style={{ marginTop: "30px", lineHeight: "1.3" }}>
-              Please click below question to find out the answer
-            </h4>
+            {QuestionList.map((QAset) => (
+              <QuestionBox QuestionList={QAset} />
+            ))}
           </Box>
         </Box>
       </Box>
-
-      {QuestionList.map((QAset) => (
-        <QuestionBox QuestionList={QAset} />
-      ))}
 
       {/* <QuestionBox /> */}
     </>
@@ -88,10 +76,11 @@ function QuestionBox({ QuestionList }) {
 
   const totalBoxStyle = {
     margin: "40px auto",
-    width: "90%",
-    height: answer ? "80px" : "40px",
+    width: "100%",
+    height: answer ? "120px" : "40px",
     boxShadow: "2px 3px 3px 2px grey",
     textAlign: "start",
+    borderRadius:"10px"
   };
 
   const QuestionBoxStyle = {

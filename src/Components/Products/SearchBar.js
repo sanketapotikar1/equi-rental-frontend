@@ -6,7 +6,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Badge from "@mui/material/Badge";
 import AddRoundedIcon from "@mui/icons-material/AddRounded";
-import AddSharpIcon from '@mui/icons-material/AddSharp';
+import AddSharpIcon from "@mui/icons-material/AddSharp";
 import { useNavigate } from "react-router-dom";
 
 export function SearchBar({ cartList, productList, setProductList }) {
