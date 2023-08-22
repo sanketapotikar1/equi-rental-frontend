@@ -22,7 +22,6 @@ export default function Home() {
 }
 
 function AuthButton() {
-
   const Navigate = useNavigate();
 
   const ButtonStyle = {
@@ -31,14 +30,13 @@ function AuthButton() {
     margin: "10px 5px 15px 20px",
   };
 
-
   return (
     <>
       <Button
         variant="contained"
         size="large"
         style={ButtonStyle}
-        onClick={()=>Navigate('/login')}
+        onClick={() => Navigate("/login")}
       >
         Login
       </Button>
@@ -46,11 +44,10 @@ function AuthButton() {
         variant="contained"
         size="large"
         style={ButtonStyle}
-        onClick={()=>Navigate('/register')}
+        onClick={() => Navigate("/register")}
       >
         Sign-up
       </Button>
     </>
   );
 }
-

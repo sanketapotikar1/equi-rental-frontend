@@ -41,7 +41,7 @@ function Cart({ cartList, setCartList }) {
   return (
     <div style={{ display: "block" }} className="cart-block">
       <h2 style={{ marginLeft: "20px", textAlign: "left", padding: "20px" }}>
-        Your shopping Cart
+        Your Renting Cart
       </h2>
       <CartHeader />
       {cartList.map((List, index) => (

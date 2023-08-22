@@ -6,6 +6,7 @@ import { ProductCard } from "./ProductCard";
 import { Login } from "@mui/icons-material";
 
 function Product({ cartList, setCartList }) {
+  
   // const product_info = [
   //   {
   //     Product_name: "Headphone",
